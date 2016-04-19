@@ -36,6 +36,7 @@ Tout d'abord, il a fallu mettre à plat le rail à coussin d'air pour être cert
 À chaque changement de masse, la ventilation a donc été réglée pour éviter ces effets indésirables.\\
 La masse de 5g a, elle aussi, été mesurée par nos soins, donnant la valeur suivante : $5.01 \pm 01g$
 
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Méthode}
 
@@ -48,79 +49,13 @@ Un souci relevé lors de cette partie de la manipulation concernait l'électro-a
 Pour les mesures du chariot pesant 400g, les masses 1, 2 et 6 ont été utilisées. Pour 300g, les masses 1 et 2. Pour 100g, uniquement la masse numéro 1.
 
 La longueur de la course du chariot a varié de 0.1 à 0.8m. La mesure de la vitesse instantanée a été obtenue en mesurant le temps que mettait une languette de $0.005 \pm 0.001m$ fixée sur le chariot.
-\begin{equation}
-    \label{vinstant}
-    v_{instant} = \frac{0.005}{\Delta T}
-\end{equation}
+% \begin{equation}
+%     \label{vinstant}
+%     v_{instant} = \frac{0.005}{\Delta T}
+% \end{equation}
 Le temps représente simplement le temps écoulé entre le moment où le chariot à été relaché par l'électro-aimant et celui où il passe devant la barrière infrarouge. C'est cette mesure qui est utilisée pour déduire l'accélération du mobile en divisant simplement l'accélération par cette durée.
 
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Résultats}
-
-Voici les mesures expérimentales obtenues avec les capteurs du boîtier Cassy:
-
-\begin{table}[ht]
-    \centering
-    \caption[MRUA mesures M=200g]{MRUA mesures M=200g}
-    \begin{tabular}{|l|l|l|l|l|}
-	\hline
-	Temps [s]	&Distance [m]	&$Durée_{obscu}$ [ms]	&Vitesse [m/s]	&Accélération [m/s2]\\
-	\hline
-	1.042	&0.1	&20.973	&0.2384	&0.2288 \\
-	1.383	&0.2	&15.289	&0.327	&0.2365 \\
-	1.634	&0.3	&12.818	&0.3901	&0.2388 \\
-	1.87	&0.4	&11.158	&0.4481	&0.2397 \\
-	2.098	&0.5	&9.943	&0.5029	&0.2397 \\
-	2.284	&0.6	&9.047	&0.5527	&0.2419 \\
-	2.482	&0.7	&8.409	&0.5946	&0.2396 \\
-	2.641	&0.8	&7.864	&0.6358	&0.2407 \\
-	\hline
-    \end{tabular}
-\end{table}
-
-\begin{table}[ht]
-    \centering
-    \caption[MRUA mesures M=300g]{MRUA mesures M=300g}
-    \begin{tabular}{|l|l|l|l|l|}
-	\hline
-	Temps [s]	&Distance [m]	&$Durée_{obscu}$ [ms]	&Vitesse [m/s]	&Accélération [m/s2]\\
-	\hline
-	1.156	&0.1	&26.616	&0.1879	&0.1626 \\
-	1.631	&0.2	&18.914	&0.2644	&0.1621 \\
-	1.988	&0.3	&15.474	&0.3231	&0.1625 \\
-	2.264	&0.4	&13.446	&0.3719	&0.1643 \\
-	2.519	&0.5	&11.989	&0.417	&0.1656 \\
-	2.758	&0.6	&10.942	&0.457	&0.1657 \\
-	2.967	&0.7	&10.158	&0.4922	&0.1659 \\
-	3.177	&0.8	&9.483	&0.5272	&0.166  \\
-	\hline
-    \end{tabular}
-\end{table}
-
-\begin{table}[ht]
-    \centering
-    \caption[MRUA mesures M=400g]{MRUA mesures M=400g}
-    \begin{tabular}{|l|l|l|l|l|}
-	\hline
-	Temps [s]	&Distance [m]	&$Durée_{obscu}$ [ms]	&Vitesse [m/s]	&Accélération [m/s2]\\
-	\hline
-	1.328	&0.1	&30.493	&0.164	&0.1234 \\
-	1.883	&0.2	&21.691	&0.2305	&0.1224 \\
-	2.282	&0.3	&17.977	&0.2781	&0.1219 \\
-	2.599	&0.4	&15.398	&0.3247	&0.1249 \\
-	2.89	&0.5	&13.771	&0.3631	&0.1257 \\
-	3.169	&0.6	&12.543	&0.3986	&0.1258 \\
-	3.443	&0.7	&11.614	&0.4305	&0.125  \\
-	3.651	&0.8	&10.86	&0.4604	&0.1261 \\
-	\hline
-    \end{tabular}
-\end{table}
-
-\newpage
-
-Pour la suite, des valeurs théoriques 
-Les valeurs théoriques ont été obtenues de la manière suivante:
+Pour pouvoir vérifier les mesures, des calculs ont été faits à partir des mesures de la manière suivante:
 
 En utilisant l'équation de la force de pesanteur~\eqref{fg} et celle de la seconde loi de newton~\eqref{2emeloi} on peut poser la formule suivante pour l'accéleration du chariot:
 \begin{equation}
@@ -191,9 +126,73 @@ Une fois les dérivées partielles effectuées:
     \Delta v = \frac{1}{t_{obscu}}\cdot \Delta s + \frac{S}{t_{osbcu}^2}\cdot \Delta t
 \end{equation}
 
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Résultats}
+
+Voici les mesures expérimentales obtenues avec les capteurs du boîtier Cassy:
+
+\begin{table}[ht]
+    \centering
+    \caption[MRUA mesures M=200g]{MRUA mesures M=200g}
+    \begin{tabular}{|l|l|l|l|l|}
+	\hline
+	Temps [s]	&Distance [m]	&$Durée_{obscu}$ [ms]	&Vitesse [m/s]	&Accélération [m/s2]\\
+	\hline
+	1.042	&0.1	&20.973	&0.2384	&0.2288 \\
+	1.383	&0.2	&15.289	&0.327	&0.2365 \\
+	1.634	&0.3	&12.818	&0.3901	&0.2388 \\
+	1.87	&0.4	&11.158	&0.4481	&0.2397 \\
+	2.098	&0.5	&9.943	&0.5029	&0.2397 \\
+	2.284	&0.6	&9.047	&0.5527	&0.2419 \\
+	2.482	&0.7	&8.409	&0.5946	&0.2396 \\
+	2.641	&0.8	&7.864	&0.6358	&0.2407 \\
+	\hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[ht]
+    \centering
+    \caption[MRUA mesures M=300g]{MRUA mesures M=300g}
+    \begin{tabular}{|l|l|l|l|l|}
+	\hline
+	Temps [s]	&Distance [m]	&$Durée_{obscu}$ [ms]	&Vitesse [m/s]	&Accélération [m/s2]\\
+	\hline
+	1.156	&0.1	&26.616	&0.1879	&0.1626 \\
+	1.631	&0.2	&18.914	&0.2644	&0.1621 \\
+	1.988	&0.3	&15.474	&0.3231	&0.1625 \\
+	2.264	&0.4	&13.446	&0.3719	&0.1643 \\
+	2.519	&0.5	&11.989	&0.417	&0.1656 \\
+	2.758	&0.6	&10.942	&0.457	&0.1657 \\
+	2.967	&0.7	&10.158	&0.4922	&0.1659 \\
+	3.177	&0.8	&9.483	&0.5272	&0.166  \\
+	\hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[ht]
+    \centering
+    \caption[MRUA mesures M=400g]{MRUA mesures M=400g}
+    \begin{tabular}{|l|l|l|l|l|}
+	\hline
+	Temps [s]	&Distance [m]	&$Durée_{obscu}$ [ms]	&Vitesse [m/s]	&Accélération [m/s2]\\
+	\hline
+	1.328	&0.1	&30.493	&0.164	&0.1234 \\
+	1.883	&0.2	&21.691	&0.2305	&0.1224 \\
+	2.282	&0.3	&17.977	&0.2781	&0.1219 \\
+	2.599	&0.4	&15.398	&0.3247	&0.1249 \\
+	2.89	&0.5	&13.771	&0.3631	&0.1257 \\
+	3.169	&0.6	&12.543	&0.3986	&0.1258 \\
+	3.443	&0.7	&11.614	&0.4305	&0.125  \\
+	3.651	&0.8	&10.86	&0.4604	&0.1261 \\
+	\hline
+    \end{tabular}
+\end{table}
+
 \newpage
 
-Avec tout ces calculs, les valeurs théoriques suivantes ont été obtenues:
+Avec les formules spécifiées dans la partie précédentes, les valeurs suivantes ont été obtenues:
 
 \begin{table}[ht]
     \centering
@@ -254,7 +253,7 @@ Avec tout ces calculs, les valeurs théoriques suivantes ont été obtenues:
 
 \newpage
 
-De ces données brutes, des graphiques ont été extraits, mettant côte à côte les courbes tirées de chaque série de valeurs.
+De ces données brutes, des graphiques ont été extraits, mettant côte à côte les courbes tirées de chaque série de valeurs et rendant ainsi plus visibles les différences entre les deux approches.
 
 \begin{figure}[h]
     \caption[Graphique mixte MRUA 200g]{Graphique mixte MRUA 200g}
@@ -275,9 +274,9 @@ De ces données brutes, des graphiques ont été extraits, mettant côte à côt
     \includegraphics[height=19em]{MRUA_400g.png}
 \end{figure}
 
-\newpage
+On observe dans un premier temps, que les valeurs théoriques sont remarquablement proches de leurs contreparties expérimentales. On peut ensuite remarquer que le décalage entre les deux séries de valeurs suit la même logique quelque soit le cas de figure. La cause en est probablement les frottements, en grande partie ceux avec le rail et probablement un peu ceux avec l'air, qui ne sont pas pris en compte dans les calculs théoriques mais qui affectent quand même le mobile dans la réalité.
 
-La première observation est que les valeurs théoriques sont remarquablement proches de leurs contreparties expérimentales. On peut ensuite remarquer que \\
+À partir de ces graphiques, on peut constater que la loi qui décrit le mouvement n'est pas linéaire, elle est d'un ordre supérieur. Sur le graphique suivant c'est la position au carré qui a été présentée, toujours en fonction du temps. Les doites étant désormais linéaires, on peut raisonnablement supposer qu'elle est quadratique.
 
 \begin{figure}
     \caption[Graphique $position^2$ MRUA]{Graphique $position^2$ MRUA}
@@ -285,20 +284,18 @@ La première observation est que les valeurs théoriques sont remarquablement pr
     \includegraphics[height=21em]{MRUAdistancet2.png}
 \end{figure}
 
-Certainement à cause des frottements, soit avec le rail, soit avec l'air, les valeurs théoriques sont toujours un peu "en avance" par rapport aux mesures.
-
 Les résultats nous montrent que la loi qui décrit le mouvement d'un mobile soumis à une accélération constante est effectivement quadratique et que la constante devant l'accélération vaut effectivement $\frac{1}{2}$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Collision}
 Pour cette manipulation, il a fallu commencer par enlever la barrière infrarouge et installer la caméra CCD.
-La mise en place et le calibrage de cet apareil de mesure s'est avéré relativement long. Il a d'abord fallu trouver la distance idéale pour capturer le déplacement des chariots tout le long du rail, adapter l'angle de prise de vu pour obtenir une intensité homogène lors du déplacement des chariots et choisir la puissance des LEDs installées sur le capteur. Une difficulté supplémentaire rencontrée lors de cette phase de mise au point étant la partie métallique de la poulie à l'extrêmité droite du rail qui était considérée comme un chariot et contribuait à créer du bruit lors de la capture de données. Une modification mineure de l'angle de la caméra a réglé ce problème.
+La mise en place et le calibrage de cet appareil de mesure se sont avérés relativement longs. Il a d'abord fallu trouver la distance idéale pour capturer le déplacement des chariots tout le long du rail, adapter l'angle de prise de vu pour obtenir une intensité homogène lors du déplacement des chariots et choisir la puissance des LEDs installées sur le capteur. Une difficulté supplémentaire rencontrée lors de cette phase de mise au point étant la partie métallique de la poulie à l'extrêmité droite du rail qui était considérée comme un chariot et contribuait à créer du bruit lors de la capture de données. Une modification mineure de l'angle de la caméra a réglé ce problème.
 La caméra a ensuite été calibrée avec le logiciel VidéoCom Mouvements afin de pouvoir représenter le rail sur une échelle physique en mètres et non en pixels tel que la caméra l'interprète naturellement.\\
 Les deux chariots ont ensuite été équipés des poids de 100g mesurés précedemment, ainsi que de ressorts à leurs extrémités afin d'optimiser l'élasticité du choc et dissiper le moins possible d'énergie lors du choc. \\
 
 L'expérience s'est ensuite déroulée en deux parties, la première où les chocs étaient complétement élastiques et les deux chariots équipés de pare-chocs métalliques. La seconde où l'un des chariots était muni d'une aiguille pouvant se planter dans la gomme dont l'autre chariot était équipé.
 
-Pour chacune des deux phases, deux combinaisons de masses ont été testées. La première fois, le chariot de gauche pesait 400g et celui de droite 200g. Lors de la seconde itération les deux chariots possédaient une masse identique de 200g.
+Pour chacune des deux phases, deux combinaisons de masses ont étés testées. La première fois, le chariot de gauche pesait 400g et celui de droite 200g. Lors de la seconde itération les deux chariots possédaient une masse identique de 200g.
 
 Les chariots ont étés mesurés avec la balance de laboratoire pour connaître leur masse précise:
 \begin{table}[h]
@@ -375,7 +372,7 @@ Sur ce dernier graphique, il est assez explicite que la valeur de l'accélérati
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \paragraph{Observation préliminaires}
 
-Comme l'on peut le constater sur les graphiques de vitesse et de position, tout le mouvement d'un chariot est transféré à l'autre au moment du choc. Le premier mobile s'arrêtant alors sur place et le second partant avec la vitesse du premier.
+Comme on peut le constater sur les graphiques de vitesse et de position, tout le mouvement d'un chariot est transféré à l'autre au moment du choc. Le premier mobile s'arrêtant alors sur place et le second partant avec la vitesse du premier.
 
 \begin{figure}[h]
     \caption[Graphique position Choc inélastique 400g-200g]{Graphique position Choc inélastique 400g-200g}
@@ -425,4 +422,4 @@ On peut très clairement voir les deux chariots se coller et poursuivre leur tra
 \subsection{Conclusion}
 En conclusion, la nature quadratique de la loi régissant l'accéleration d'un objet qu'on pourrait assimiler à un point matériel a pu être observée dans des conditions correctes.
 La conservation de la quantité de mouvement a, elle aussi pu être constatée. Les incertitudes qui subsistent sont développées dans la conclusion qui suit.
-En annexe sont présentes les données supplémentaires que nous avons recueillies mais ne méritant pas d'être présentées.
+En annexe sont présentes les données supplémentaires que nous avons recueillies lors de l'expérience et les documents nous ayant permis d'achever notre travail.
